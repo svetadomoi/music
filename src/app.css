@@ -1,0 +1,138 @@
+:root,
+[data-theme='dark'] {
+  --bg: #14141a;
+  --panel: #1b1b23;
+  --panel-2: #24242f;
+  --border: #2e2e3b;
+  --text: #e8e8ee;
+  --muted: #8b8b9a;
+  --accent: #9b82ff;
+  --accent-bg: rgba(124, 92, 255, 0.16);
+  --danger: #ff6b6b;
+  color-scheme: dark;
+}
+
+[data-theme='light'] {
+  --bg: #f4f4f8;
+  --panel: #ffffff;
+  --panel-2: #ebebf2;
+  --border: #d8d8e2;
+  --text: #1c1c26;
+  --muted: #6b6b7b;
+  --accent: #6a4cff;
+  --accent-bg: rgba(106, 76, 255, 0.12);
+  --danger: #d93b3b;
+  color-scheme: light;
+}
+
+[data-theme='midnight'] {
+  --bg: #000000;
+  --panel: #0a0a0d;
+  --panel-2: #15151a;
+  --border: #24242b;
+  --text: #ececf2;
+  --muted: #80808c;
+  --accent: #b39dff;
+  --accent-bg: rgba(179, 157, 255, 0.16);
+  --danger: #ff6b6b;
+  color-scheme: dark;
+}
+
+[data-theme='ocean'] {
+  --bg: #0d1a24;
+  --panel: #12222f;
+  --panel-2: #1a2f40;
+  --border: #24425a;
+  --text: #e6f1f8;
+  --muted: #7f9bb0;
+  --accent: #4fc3f7;
+  --accent-bg: rgba(79, 195, 247, 0.15);
+  --danger: #ff7a7a;
+  color-scheme: dark;
+}
+
+[data-theme='forest'] {
+  --bg: #101a14;
+  --panel: #16231b;
+  --panel-2: #1e3025;
+  --border: #2b4637;
+  --text: #e8f3ec;
+  --muted: #86a091;
+  --accent: #5fd38d;
+  --accent-bg: rgba(95, 211, 141, 0.15);
+  --danger: #ff7a7a;
+  color-scheme: dark;
+}
+
+[data-theme='sunset'] {
+  --bg: #1c1414;
+  --panel: #261a1a;
+  --panel-2: #342323;
+  --border: #4a3030;
+  --text: #f6ebe6;
+  --muted: #a58b84;
+  --accent: #ff8a5c;
+  --accent-bg: rgba(255, 138, 92, 0.16);
+  --danger: #ff5f6d;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font: 14px/1.4 system-ui, 'Segoe UI', sans-serif;
+  user-select: none;
+}
+
+button,
+input,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--panel-2);
+}
+
+button:hover:not(:disabled) {
+  border-color: var(--accent);
+}
+
+button:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+input[type='text'],
+input:not([type]),
+select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--panel-2);
+  user-select: text;
+}
+
+input[type='range'] {
+  accent-color: var(--accent);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 5px;
+}

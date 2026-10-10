@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+
+# Frontend build output
+dist/
+.svelte-kit/
+.vite/
+*.tsbuildinfo
+
+# Rust / Tauri
+src-tauri/target/
+src-tauri/gen/schemas/
+src-tauri/WixTools/
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Editors / IDE
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.suo
+*.user
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Claude Code local files
+.claude/settings.local.json
